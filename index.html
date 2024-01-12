@@ -4,10 +4,589 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis nemo possimus architecto repellendus quod illum aut nihil, minima quia?</p>
+    <div class="big">
+        <div class="text">
+            <h1>OCEAN <span>vibes</span></h1>
+        </div>
+        <div class="video">
+            
+            <video id="video" autoplay muted loop>
+                <source src="./video/ocean-sea-wave-video.mp4" type="video/mp4">
 
-<h1> salom madi </h1>
+            </video>
+            
+            <button onclick="playPause()" id="btn"><p id="iu">❚ ❚</p></button>
+
+        </div>
+    </div>
+
+
+<div class="blockbig">
+<div class="block1" onclick="openbtn()">
+<p>Kirish</p>
+<i class="fa-solid fa-water" id="is"></i>
+</div>
+<div class="block1"  onclick="cls()" >
+    <p>Galereya</p>
+    <i class="fa-regular fa-images" id="is"></i>
+    </div>
+    <div class="block1" onclick="openbt()">
+        <p>Guvohlar</p>
+        <i class="fa-regular fa-face-smile" id="is"></i>
+        </div>
+        <div class="block1" onclick="openb()">
+            <p>Biz haqimizda</p>
+            <i class="fa-solid fa-droplet" id="is"></i>
+            </div>
+            <div class="block1" onclick="opnb()">
+                <p>Aloqa</p>
+                <i class="fa-regular fa-comments" id="is"></i>
+                </div>
+</div>
+
+
+<div class="block" id="block">
+    <div class="con">
+
+    <div class="verx">       
+     <a href="javascript:void(0)" class="closebtn" onclick="closebtn()">uyga qaytish  <i class="fa-solid fa-xmark" id="exit"></i></a> 
+    </div>
+    <div class="box">
+
+    <div class="img">
+    <img src="./img/intro.jpg" alt="">
+</div>
+
+    <div class="text">
+<h1>Okean vibes bilan tanishtirish</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit cupiditate, numquam, nihil id quos laborum ad facilis quasi, aut explicabo harum cumque?Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, reiciendis?
+</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit cupiditate, numquam, nihil id quos laborum ad facilis quasi, aut explicabo harum cumque?Lorem ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, dolore inventore consequatur odit tenetur porro?
+</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit cupiditate, numquam, nihil id quos laborum ad facilis quasi, aut explicabo harum cumque?Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, harum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis debitis sit deleniti eligendi aliquam nam hic quas placeat alias delectus.
+</p>
+</div>
+
+
+<div class="text2" >
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit assumenda possimus ullam fuga aut tempora cumque sequi dolores, accusantium saepe. Lorem ipsum dolor sit amet.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fuga porro ipsam vel. Ipsum, possimus! Lorem ipsum dolor sit amet.</p>
+   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cumque eveniet nisi? Enim quae repellat voluptate praesentium Lorem ipsum dolor sit amet.</p>
+   <button onclick="rs()">Keyingi Sahifa</button>
+</div>
+               
+    </div> 
+</div>
+</div>
+
+
+
+<div class="block5" id="block5">
+
+
+    <div class="verx">       
+        <a href="javascript:void(0)" class="closebtn" onclick="bmw()">uyga qaytish  <i class="fa-solid fa-xmark" id="exit"></i></a> 
+       </div>
+<div class="box5">
+<div class="galereya">
+    
+<img src="./img/gallery/portrait-01.jpg" alt="" id="img1">
+<img src="./img/gallery/nature-01.jpg" alt="" id="img2">
+<img src="./img/gallery/animal-01.jpg" alt="" id="img3">
+<img src="./img/gallery/building-01.jpg" alt="" id="img4">
+<img src="./img/gallery/portrait-02.jpg" alt="" id="img5">
+<img src="./img/gallery/nature-02.jpg" alt="" id="img6">
+<img src="./img/gallery/animal-02.jpg" alt="" id="img7">
+<img src="./img/gallery/building-02.jpg" alt="" id="img8">
+<div id="buttons100">
+<button onclick="btn1()" id="btn10">1</button>
+<button onclick="btn2()" id="btn20">2</button>
+<button onclick="btn3()" id="btn30">3</button>
+<button onclick="btn4()" id="btn40">4</button>
+</div>
+</div>
+
+
+<div class="text5">
+<h1>Galereya</h1>
+<button style="width: 98px;"  onclick="btn5()" id="btn50"><i class="fa-solid fa-layer-group" ></i> Barchasi</button>
+<button style="width: 98px;"  onclick="btn6()" id="btn60"><i class="fa-solid fa-id-badge"></i>  Portretlar</button>
+<button style="width: 75px;" onclick="btn7()" id="btn70"><i class="fa-solid fa-feather-pointed"></i>  Tabiat</button>
+<button style="width: 100px;" onclick="btn8()" id="btn80"><i class="fa-solid fa-paw"></i>  Hayvonot</button>
+<button style="width: 110px;" onclick="btn9()" id="btn90"><i class="fa-solid fa-building"></i>  Qurulishlar</button>
+<div class="text6">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita rem vel distinctio excepturi numquam incidunt placeat consequatur animi, quisquam minus voluptatum vero. Beatae totam aspernatur a distinctio eius? Quis, necessitatibus.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eaque repellendus eligendi. Est, voluptas reiciendis!</p>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="block10" id="block10" >
+
+
+    <div class="verx">       
+        <a href="javascript:void(0)" class="closebtn" onclick="closebt()">uyga qaytish  <i class="fa-solid fa-xmark" id="exit"></i></a> 
+       </div>
+
+
+<div class="box2">
+
+<div class="texta">
+
+<h1>Testimonials</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolor, inventore placeat, odio eius quo, saepe maxime porro voluptatum magni quaerat a error tempora iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos alias reiciendis voluptatum totam, unde labore molestias eum quo minima, praesentium obcaecati vel mollitia repudiandae aut? Lorem.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius soluta, itaque beatae ut odit voluptate incidunt possimus tenetur enim</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sapiente, voluptatum eveniet molestiae perspiciatis voluptates delectus ipsam eligendi, impedit veniam error, rem modi mollitia!. </p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid est dolore eaque non ipsam placeat fugit necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, iste.</p>
+</div>
+
+<div class="text-img">
+<div class="img2">
+    <img src="./img/testimonial-01.jpg" alt="">
+</div>
+
+
+<div class="texr">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid commodi, dolores at magni libero dolorem non quo beatae nostrum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure aliquam neque labore nihil animi voluptate?</p>
+    <button onclick="wip()">Contact Us</button>
+</div>
+</div>
+
+
+<div class="img-text">
+    <div class="textn">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo nihil consectetur id porro libero voluptatibus, mollitia debitis laboriosam nostrum dolorum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sunt adipisci quae tenetur repellat consequuntur accusantium minus molestiae voluptatem!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorum suscipit incidunt minus.</p>
+    </div>
+    <img src="./img/testimonial-02.jpg" alt="">
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="block20" id="block20">
+
+
+
+    
+    <div class="verx">       
+        <a href="javascript:void(0)" class="closebtn" onclick="closeb()">uyga qaytish  <i class="fa-solid fa-xmark" id="exit"></i></a> 
+       </div>
+
+<div class="blox20">
+
+
+
+
+<div class="imgandtext">
+    <h1>Ocean Viberlar haqida</h1>
+    <img src="./img/about.jpg" alt="">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nobis, quod nihil alias pariatur facere repudiandae voluptatem obcaecati eos sint. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, ut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit alias totam vitae. Provident dolorem optio ipsa cupiditate ut, voluptatem distinctio placeat, neque aliquid libero ipsam repellat expedita unde veniam!</p>
+</div>
+
+
+<div class="text20">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, neque sequi libero ratione nesciunt, inventore, facilis non autem possimus in reiciendis necessitatibu</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum fuga fugiat placeat consequuntur asperiores esse et quasi aut laborum iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repudiandae dolor atque eos dolorum dignissimos?</p>
+    <button onclick="wis()">Contact Us</button>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="block30" id="block30">
+ 
+    <div class="verx">       
+        <a href="javascript:void(0)" class="closebtn" onclick="clsb()">uyga qaytish  <i class="fa-solid fa-xmark" id="exit"></i></a> 
+       </div>
+
+
+<div class="box33">
+
+<div class="input">
+    <h1>Contact Us</h1>
+
+    <form action="#">
+<input type="text" name="userid" placeholder=" Name">
+</form>
+
+
+
+<form action="/action_page.php">
+    <input type="email" id="email" name="email" placeholder=" Email">
+  </form>
+
+
+
+  <form action="#">
+    <input type="text" name="userid" placeholder=" Subject">
+    </form>
+
+
+
+    <form action="/action_page.php">
+        <p><label for="w3review"></label></p>
+        <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder=" Message" style="height: 250px; font-size: 15px; width: 350px;"></textarea>
+        <br>
+        <input type="submit" value="Submit" class="butns" style="width: 200px;">
+      </form>
+      
+</div>
+
+
+
+<div class="kart">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.7713110454365!2d69.25785907633593!3d41.29208137131215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf37d8d5ca1%3A0x76e36588bd292ebc!2sTechBrain%20academy!5e0!3m2!1sru!2s!4v1703583421944!5m2!1sru!2s" width="700px" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="tech">
+
+    <p>Toshkent sh Yakkasaroy t,<br>
+        <br>
+        Shota Rustaveli ko'chasi</p>
+
+        <br><br>
+        <p><i class="fa-solid fa-phone"></i>  Tel:+90 917 66 00</p>
+        <br>
+        <p><i class="fa-solid fa-at"></i>  Email:info@techbrain.com</p>
+        <br>
+        <p><i class="fa-solid fa-link"></i>  URL:www.techbraimacademy.com</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var video = document.getElementById("video");
+var playButton = document.getElementById("btn");
+
+
+playButton.addEventListener('click', (e) => {
+  if(video.paused){
+    video.play()
+    e.target.textContent = '❚ ❚'
+  } else {
+    video.pause()
+    e.target.textContent = '►'
+  }
+})
+
+
+
+
+function btn1() {
+    document.getElementById("img1").src = './img/gallery/portrait-01.jpg';
+    document.getElementById("img2").src = './img/gallery/nature-01.jpg ';
+    document.getElementById("img3").src = './img/gallery/animal-01.jpg';
+    document.getElementById("img4").src = './img/gallery/building-01.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-02.jpg';
+    document.getElementById("img6").src = './img/gallery/nature-02.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-02.jpg';
+    document.getElementById("img8").src = './img/gallery/building-02.jpg';
+    document.getElementById("btn10").style.backgroundColor = 'rgb(0, 132, 255)';
+    document.getElementById("btn10").style.color = 'white';
+    document.getElementById("btn20").style.backgroundColor = 'white';
+    document.getElementById("btn20").style.color = 'gray';
+    document.getElementById("btn30").style.backgroundColor = 'white';
+    document.getElementById("btn30").style.color = 'gray';
+    document.getElementById("btn40").style.backgroundColor = 'white';
+    document.getElementById("btn40").style.color = 'gray';
+}
+
+function btn2() {
+    document.getElementById("img1").src = './img/gallery/portrait-03.jpg';
+    document.getElementById("img2").src = './img/gallery/nature-03.jpg ';
+    document.getElementById("img3").src = './img/gallery/animal-03.jpg';
+    document.getElementById("img4").src = './img/gallery/building-03.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-04.jpg';
+    document.getElementById("img6").src = './img/gallery/nature-04.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-04.jpg';
+    document.getElementById("img8").src = './img/gallery/building-04.jpg';
+    document.getElementById("btn20").style.backgroundColor = 'rgb(0, 132, 255)';
+    document.getElementById("btn20").style.color = 'white';
+    document.getElementById("btn10").style.backgroundColor = 'white';
+    document.getElementById("btn10").style.color = 'gray';
+    document.getElementById("btn30").style.backgroundColor = 'white';
+    document.getElementById("btn30").style.color = 'gray';
+    document.getElementById("btn40").style.backgroundColor = 'white';
+    document.getElementById("btn40").style.color = 'gray';
+}
+
+
+function btn3() {
+    document.getElementById("img1").src = './img/gallery/portrait-05.jpg';
+    document.getElementById("img2").src = './img/gallery/nature-05.jpg ';
+    document.getElementById("img3").src = './img/gallery/animal-05.jpg';
+    document.getElementById("img4").src = './img/gallery/building-05.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-06.jpg';
+    document.getElementById("img6").src = './img/gallery/nature-06.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-06.jpg';
+    document.getElementById("img8").src = './img/gallery/building-06.jpg';
+    document.getElementById("btn30").style.backgroundColor = 'rgb(0, 132, 255)';
+    document.getElementById("btn30").style.color = 'white';
+    document.getElementById("btn10").style.backgroundColor = 'white';
+    document.getElementById("btn10").style.color = 'gray';
+    document.getElementById("btn20").style.backgroundColor = 'white';
+    document.getElementById("btn20").style.color = 'gray';
+    document.getElementById("btn40").style.backgroundColor = 'white';
+    document.getElementById("btn40").style.color = 'gray';
+}
+
+
+
+function btn4() {
+    document.getElementById("img1").src = './img/gallery/portrait-07.jpg';
+    document.getElementById("img2").src = './img/gallery/nature-07.jpg ';
+    document.getElementById("img3").src = './img/gallery/animal-07.jpg';
+    document.getElementById("img4").src = './img/gallery/building-07.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-08.jpg';
+    document.getElementById("img6").src = './img/gallery/nature-08.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-08.jpg';
+    document.getElementById("img8").src = './img/gallery/building-08.jpg';
+    document.getElementById("btn40").style.backgroundColor = 'rgb(0, 132, 255)';
+    document.getElementById("btn40").style.color = 'white';
+    document.getElementById("btn20").style.backgroundColor = 'white';
+    document.getElementById("btn20").style.color = 'gray';
+    document.getElementById("btn30").style.backgroundColor = 'white';
+    document.getElementById("btn30").style.color = 'gray';
+    document.getElementById("btn10").style.backgroundColor = 'white';
+    document.getElementById("btn10").style.color = 'gray';
+}
+
+function btn5() {
+    document.getElementById("img1").src = './img/gallery/portrait-01.jpg';
+    document.getElementById("img2").src = './img/gallery/nature-01.jpg ';
+    document.getElementById("img3").src = './img/gallery/animal-01.jpg';
+    document.getElementById("img4").src = './img/gallery/building-01.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-02.jpg';
+    document.getElementById("img6").src = './img/gallery/nature-02.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-02.jpg';
+    document.getElementById("img8").src = './img/gallery/building-02.jpg';
+    document.getElementById("btn50").style.color = 'rgb(0, 132, 255)';
+    document.getElementById("buttons100").style.display = 'block';
+    document.getElementById("btn60").style.color = 'gray';
+    document.getElementById("btn70").style.color = 'gray';
+    document.getElementById("btn80").style.color = 'gray';
+    document.getElementById("btn90").style.color = 'gray';
+
+
+}
+
+function btn6() {
+    document.getElementById("img1").src = './img/gallery/portrait-01.jpg';
+    document.getElementById("img2").src = './img/gallery/portrait-02.jpg ';
+    document.getElementById("img3").src = './img/gallery/portrait-03.jpg';
+    document.getElementById("img4").src = './img/gallery/portrait-04.jpg';
+    document.getElementById("img5").src = './img/gallery/portrait-05.jpg';
+    document.getElementById("img6").src = './img/gallery/portrait-06.jpg';
+    document.getElementById("img7").src = './img/gallery/portrait-07.jpg';
+    document.getElementById("img8").src = './img/gallery/portrait-08.jpg';
+    document.getElementById("btn60").style.color = 'rgb(0, 132, 255)';
+    document.getElementById("buttons100").style.display = 'none';
+    document.getElementById("btn50").style.color = 'gray';
+    document.getElementById("btn70").style.color = 'gray';
+    document.getElementById("btn80").style.color = 'gray';
+    document.getElementById("btn90").style.color = 'gray';
+}
+
+function btn7() {
+    document.getElementById("img1").src = './img/gallery/nature-01.jpg ';
+    document.getElementById("img2").src = './img/gallery/nature-02.jpg ';
+    document.getElementById("img3").src = './img/gallery/nature-03.jpg ';
+    document.getElementById("img4").src = './img/gallery/nature-04.jpg ';
+    document.getElementById("img5").src = './img/gallery/nature-05.jpg ';
+    document.getElementById("img6").src = './img/gallery/nature-06.jpg';
+    document.getElementById("img7").src = './img/gallery/nature-07.jpg ';
+    document.getElementById("img8").src = './img/gallery/nature-08.jpg ';
+    document.getElementById("btn70").style.color = 'rgb(0, 132, 255)';
+    document.getElementById("buttons100").style.display = 'none';
+    document.getElementById("btn60").style.color = 'gray';
+    document.getElementById("btn50").style.color = 'gray';
+    document.getElementById("btn80").style.color = 'gray';
+    document.getElementById("btn90").style.color = 'gray';
+ 
+}
+
+function btn8() {
+    document.getElementById("img1").src = './img/gallery/animal-01.jpg';
+    document.getElementById("img2").src = './img/gallery/animal-02.jpg';
+    document.getElementById("img3").src = './img/gallery/animal-03.jpg';
+    document.getElementById("img4").src = './img/gallery/animal-04.jpg';
+    document.getElementById("img5").src = './img/gallery/animal-05.jpg';
+    document.getElementById("img6").src = './img/gallery/animal-06.jpg';
+    document.getElementById("img7").src = './img/gallery/animal-07.jpg';
+    document.getElementById("img8").src = './img/gallery/animal-08.jpg';
+    document.getElementById("btn80").style.color = 'rgb(0, 132, 255)';
+    document.getElementById("buttons100").style.display = 'none';
+    document.getElementById("btn60").style.color = 'gray';
+    document.getElementById("btn70").style.color = 'gray';
+    document.getElementById("btn50").style.color = 'gray';
+    document.getElementById("btn90").style.color = 'gray';
+
+}
+
+function btn9() {
+    document.getElementById("img1").src = './img/gallery/building-01.jpg';
+    document.getElementById("img2").src = './img/gallery/building-02.jpg';
+    document.getElementById("img3").src = './img/gallery/building-03.jpg';
+    document.getElementById("img4").src = './img/gallery/building-04.jpg';
+    document.getElementById("img5").src = './img/gallery/building-05.jpg';
+    document.getElementById("img6").src = './img/gallery/building-06.jpg';
+    document.getElementById("img7").src = './img/gallery/building-07.jpg';
+    document.getElementById("img8").src = './img/gallery/building-08.jpg';
+    document.getElementById("btn90").style.color = 'rgb(0, 132, 255)';
+    document.getElementById("buttons100").style.display = 'none';
+    document.getElementById("btn60").style.color = 'gray';
+    document.getElementById("btn70").style.color = 'gray';
+    document.getElementById("btn80").style.color = 'gray';
+    document.getElementById("btn50").style.color = 'gray';
+
+}
+
+
+
+
+
+
+
+
+function rs() {
+            document.getElementById("block5").style.display = "block";
+            document.getElementById("block").style.display = "none";
+        } 
+
+
+
+
+
+function cls()  {
+            document.getElementById("block5").style.display = "block";
+        }
+
+
+function bmw()  {
+            document.getElementById("block5").style.display = "none";
+        }
+
+
+
+
+
+function openbtn()  {
+            document.getElementById("block").style.display = "block";
+        }
+
+
+function closebtn()  {
+            document.getElementById("block").style.display = "none";
+        }
+
+
+
+
+
+function closebt()  {
+            document.getElementById("block10").style.display = "none";
+        }
+
+
+        function openbt()  {
+            document.getElementById("block10").style.display = "block";
+        }
+
+
+        function openb()  {
+            document.getElementById("block20").style.display = "block";
+        }
+
+
+        function closeb()  {
+            document.getElementById("block20").style.display = "none";
+        }
+
+        
+        function opnb()  {
+            document.getElementById("block30").style.display = "block";
+        }
+
+
+        function clsb()  {
+            document.getElementById("block30").style.display = "none";
+        }
+
+
+        function wip() {
+            document.getElementById("block30").style.display = "block";
+            document.getElementById("block10").style.display = "none";
+        } 
+
+        function wis() {
+            document.getElementById("block30").style.display = "block";
+            document.getElementById("block20").style.display = "none";
+        } 
+
+
+
+
+
+
+
+
+
+    </script>
 </body>
 </html>
